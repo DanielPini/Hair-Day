@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+}
+
+main {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main * {
+  margin-top: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+h3 {
+  margin-top: 40px;
+}
+h4 {
+  font-style: italic;
+}
+ul {
+  padding-left: 40px;
+}
+input {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(177, 108, 82);
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  box-shadow: 0 1px 2px hsl(16, 38%, 30%);
+}
+
+input:active {
+  box-shadow: none;
+  transition: box-shadow 100ms;
+}

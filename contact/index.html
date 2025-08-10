@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="High-End Styling for a Discerning Clientele" />
+    <meta
+      name="author"
+      content="Daniel Pini" />
+
+    <meta
+      property="og:title"
+      content="Hair-Day" />
+    <meta
+      property="og:image"
+      content="/assets/Artboard 23.png" />
+    <meta
+      property="og:url"
+      content="https://hair-day.com" />
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      property="og:description"
+      content="High-End Styling for Discerning Clientele" />
+
+    <link
+      rel="stylesheet"
+      href="../defaultstyle.css" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Contact Us | Hair-Day</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="logo"
+          src="../assets/Artboard 22.png"
+          alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/info/">Info</a></li>
+          <li id="current">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Your Details</legend>
+          <label for="name"> Name </label>
+          <input
+            type="text"
+            id="name"
+            name="name" />
+          <fieldset>
+            <legend>Gender</legend>
+            <label for="female">
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                checked />
+              Female
+            </label>
+            <label for="male">
+              <input
+                type="radio"
+                id="male"
+                name="gender" />
+              Male
+            </label>
+            <label for="other">
+              <input
+                type="radio"
+                id="other"
+                name="gender" />
+              Other
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Age</legend>
+            <label for="child">
+              <input
+                type="radio"
+                id="child"
+                name="age"
+                checked />
+              Under 15
+            </label>
+            <label for="youngAdult">
+              <input
+                type="radio"
+                id="youngAdult"
+                name="age" />
+              16 - 30
+            </label>
+            <label for="adult">
+              <input
+                type="radio"
+                id="adult"
+                name="age" />
+              30 - 45
+            </label>
+            <label for="senior">
+              <input
+                type="radio"
+                id="senior"
+                name="age" />
+              Over 45
+            </label>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>How can we help</legend>
+          <label for="queryInput"> Query </label>
+          <input
+            list="query"
+            id="queryInput" />
+          <datalist id="query">
+            <option value="Enquiry"></option>
+            <option value="Make an appointment"></option>
+            <option value="Booking change request"></option>
+            <option value="Get a quote"></option>
+            <option value="Other"></option>
+          </datalist>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            maxlength="500">
+          </textarea>
+        </fieldset>
+        <input
+          type="submit"
+          onclick="submitted()" />
+      </form>
+    </main>
+    <footer>
+      <div class="small-logo">
+        <img
+          id="logo"
+          src="/assets/Artboard 22.png"
+          alt="Small Hair-Day Logo" />
+      </div>
+      <div class="copyright"><small>© Hair-Day 2025</small></div>
+
+      <script>
+        function submitted() {
+          const clientName = document.getElementById("name").value;
+          alert(
+            `Thanks ${clientName}! We'll take a look at your query and get back to you as soon as possible.`
+          );
+        }
+      </script>
+    </footer>
+  </body>
+</html>

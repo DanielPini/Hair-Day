@@ -1,0 +1,47 @@
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+}
+
+form {
+  width: fit-content;
+  margin: 20px auto;
+  border: 1px solid rgb(177, 108, 82);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+fieldset {
+  margin: 10px 0;
+  border: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+
+legend {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 400px;
+}
+
+input[type="radio"] {
+  width: fit-content;
+}

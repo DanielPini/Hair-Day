@@ -30,6 +30,9 @@
 
     <link
       rel="stylesheet"
+      href="defaultstyle.css" />
+    <link
+      rel="stylesheet"
       href="style.css" />
 
     <title>Hair-Day</title>
@@ -38,12 +41,13 @@
     <div class="logo-container">
       <img
         class="logo"
+        id="logo"
         src="/assets/Artboard 1.png"
         alt="Hair cutting" />
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li id="current">Home</li>
         <li><a href="/services/">Services</a></li>
         <li><a href="/info/">Info</a></li>
         <li><a href="/contact/">Contact</a></li>
@@ -59,28 +63,53 @@
         <img
           src="assets/1.jpg"
           alt="Female shoulder-length cut" />
-        <div></div>
+        <div class="text">
+          <h3>Cut</h3>
+          <p>
+            A haircut should do more than follow trends — it should be made for
+            you. Our stylists take the time to understand your lifestyle, your
+            hair, and your vision. Each cut is shaped with precision and
+            balance, so it grows beautifully and feels effortless every day.
+          </p>
+        </div>
       </article>
       <article>
         <img
           src="assets/2.jpg"
           alt="Female smokey berliner cut" />
-        <div></div>
+        <div class="text">
+          <h3>Colour</h3>
+          <p>
+            From subtle dimension to statement tones, we create colour that
+            enhances your features and complements your style. Every shade is
+            blended to order, using techniques that protect your hair’s health
+            while delivering luminous, lasting results.
+          </p>
+        </div>
       </article>
       <article>
         <img
           src="assets/3.webp"
           alt="Male punk cut" />
-        <div></div>
+        <div class="text">
+          <h3>Treat Yourself</h3>
+          <p>
+            Your appointment is more than maintenance — it’s time set aside for
+            you. Indulge in treatments designed to restore, strengthen, and
+            revitalise, all while you unwind in our care. Leave feeling
+            refreshed, confident, and completely yourself.
+          </p>
+        </div>
       </article>
     </main>
     <footer>
       <div class="small-logo">
         <img
+          id="logo"
           src="/assets/Artboard 22.png"
           alt="Small Hair-Day Logo" />
       </div>
-      <div class="copyright">© Hair-Day 2025</div>
+      <div class="copyright"><small>© Hair-Day 2025</small></div>
     </footer>
   </body>
 </html>
