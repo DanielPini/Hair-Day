@@ -100,14 +100,41 @@ main {
   grid-area: banner;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 10px auto;
   background: url(https://leflscissors.com/wp-content/uploads/2023/10/IMG_7035-jpg.webp)
     center;
   width: 95%;
   aspect-ratio: 5;
   border-radius: 15px;
+  animation: fire 10s linear infinite;
 }
 
+@keyframes fire {
+  0% {
+    box-shadow: 0px 0px 10px red, -1px 0px 15px yellow, 0px 1px 5px blue,
+      0px 0px 7px green;
+  }
+  25% {
+    box-shadow: 0px 0px 1px red, 0px 1px 25px yellow, 0px 0px 7px blue,
+      0px 1px 5px green;
+  }
+  50% {
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.443), 1px 1px 15px yellow,
+      0px -1px 5px blue, 0px 0px 7px green;
+  }
+  75% {
+    box-shadow: 0px 0px 0px red, 0px 1px 25px yellow, 0px 0px 7px blue,
+      0px -1px 5px green;
+  }
+  100% {
+    box-shadow: 0px 0px 10px red, -1px 0px 15px yellow, 0px 1px 5px blue,
+      0px 0px 7px green;
+  }
+}
+.banner a {
+  text-decoration: none;
+}
 .banner p {
   color: white;
   font-size: clamp(10px, 35px, 40px);
@@ -127,10 +154,24 @@ article:nth-of-type(3) {
   grid-area: article3;
 }
 
-article {
+.article-section {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.article-section:hover {
+  position: relative;
+  transform: scale(1.005);
   display: flex;
+  transition: transform 100ms;
+}
+
+.article-section a {
+  display: flex;
+  flex: 1 1 auto;
   align-items: center;
   flex-flow: column;
+  text-decoration: none;
 }
 article img {
   width: 90%;
