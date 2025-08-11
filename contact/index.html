@@ -60,96 +60,108 @@
       </nav>
     </header>
     <main>
-      <form action="">
-        <fieldset>
-          <legend>Your Details</legend>
-          <label for="name"> Name </label>
-          <input
-            type="text"
-            id="name"
-            name="name" />
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <p>
+          For all booking, quote, or other requests, please use the form below
+          and we will get back to you as soon as we can.
+        </p>
+        <p>
+          If we don't get back to you immediately, please keep in mind that we
+          are a small team and are doing our best to accommodate the diverse
+          needs of our clients.
+        </p>
+        <form action="">
           <fieldset>
-            <legend>Gender</legend>
-            <label for="female">
-              <input
-                type="radio"
-                id="female"
-                name="gender"
-                checked />
-              Female
-            </label>
-            <label for="male">
-              <input
-                type="radio"
-                id="male"
-                name="gender" />
-              Male
-            </label>
-            <label for="other">
-              <input
-                type="radio"
-                id="other"
-                name="gender" />
-              Other
-            </label>
+            <legend>Your Details</legend>
+            <label for="name"> Name </label>
+            <input
+              type="text"
+              id="name"
+              name="name" />
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="female">
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  checked />
+                Female
+              </label>
+              <label for="male">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender" />
+                Male
+              </label>
+              <label for="other">
+                <input
+                  type="radio"
+                  id="other"
+                  name="gender" />
+                Other
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Age</legend>
+              <label for="child">
+                <input
+                  type="radio"
+                  id="child"
+                  name="age"
+                  checked />
+                Under 15
+              </label>
+              <label for="youngAdult">
+                <input
+                  type="radio"
+                  id="youngAdult"
+                  name="age" />
+                16 - 30
+              </label>
+              <label for="adult">
+                <input
+                  type="radio"
+                  id="adult"
+                  name="age" />
+                30 - 45
+              </label>
+              <label for="senior">
+                <input
+                  type="radio"
+                  id="senior"
+                  name="age" />
+                Over 45
+              </label>
+            </fieldset>
           </fieldset>
           <fieldset>
-            <legend>Age</legend>
-            <label for="child">
-              <input
-                type="radio"
-                id="child"
-                name="age"
-                checked />
-              Under 15
-            </label>
-            <label for="youngAdult">
-              <input
-                type="radio"
-                id="youngAdult"
-                name="age" />
-              16 - 30
-            </label>
-            <label for="adult">
-              <input
-                type="radio"
-                id="adult"
-                name="age" />
-              30 - 45
-            </label>
-            <label for="senior">
-              <input
-                type="radio"
-                id="senior"
-                name="age" />
-              Over 45
-            </label>
+            <legend>How can we help</legend>
+            <label for="queryInput"> Query </label>
+            <input
+              list="query"
+              id="queryInput" />
+            <datalist id="query">
+              <option value="Enquiry"></option>
+              <option value="Make an appointment"></option>
+              <option value="Booking change request"></option>
+              <option value="Get a quote"></option>
+              <option value="Other"></option>
+            </datalist>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              maxlength="500">
+            </textarea>
           </fieldset>
-        </fieldset>
-        <fieldset>
-          <legend>How can we help</legend>
-          <label for="queryInput"> Query </label>
           <input
-            list="query"
-            id="queryInput" />
-          <datalist id="query">
-            <option value="Enquiry"></option>
-            <option value="Make an appointment"></option>
-            <option value="Booking change request"></option>
-            <option value="Get a quote"></option>
-            <option value="Other"></option>
-          </datalist>
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            maxlength="500">
-          </textarea>
-        </fieldset>
-        <input
-          type="submit"
-          onclick="submitted()" />
-      </form>
+            type="submit"
+            onclick="submitted()" />
+        </form>
+      </section>
     </main>
     <footer>
       <div class="small-logo">

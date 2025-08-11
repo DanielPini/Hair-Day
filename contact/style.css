@@ -12,9 +12,24 @@ header {
   position: absolute;
 }
 
+.contact {
+  width: 700px;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact > p {
+  padding: 20px 0;
+}
+
 form {
   width: fit-content;
-  margin: 20px auto;
+  margin: 40px auto;
   border: 1px solid rgb(177, 108, 82);
   border-radius: 10px;
   padding: 20px;
